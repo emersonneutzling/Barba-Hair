@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="stile.css"/>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Barba&Hair - Sua Barbearia!</title>
     
 </head>
@@ -17,22 +19,22 @@
     <div class="bg-home">
         <header>
             <nav class="header-content container">
-                <div class="header-icons">
+                <div class="header-icons" data-aos="fade-down">
                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
                     <a href="#"><i class="fa-brands fa-facebook"></i></a>
                     <a href="#"><i class="fa-brands fa-tiktok"></i></a>
                 </div>
-                <div class="header-logo">
-                    <img src="imagens/logo.svg" alt="logo da Barbearia">
+                <div class="header-logo" data-aos="fade-up" data-aos-delay="300">
+                    <img data-aos="flip-up" data-aos-delay="300" data-aos-duration="1500" src="imagens/logo.svg" alt="logo da Barbearia">
                 </div>
-                <div class="header-btn">
-                    <a class="header-button" href="#">Agendar horário</a>
+                <div class="header-btn" data-aos="fade-down">
+                    <a class="header-button"   href="#">Seu horário</a>
                 </div>
             </nav>
-            <main class="hero container">
+            <main class="hero container" data-aos="fade-up" data-aos-delay="400">
                 <h1>ESTILO É UM REFLEXO DA SUA ATITUDE E SUA PERSONALIDADE.</h1>
                 <p>Horário de funcionamento: 09:00 ás 19:00</p>
-                <a href="#" class="button-contact" target="_blank">
+                <a href="https://api.whatsapp.com/send" class="button-contact" target="_blank">
                     Agendar horário
                 </a>
             </main>
@@ -41,10 +43,10 @@
     </div>
     <section class="about">
         <div class="container about-content">
-            <div>
+            <div data-aos="zoom-in" data-aos-delay="100">
                 <img src="imagens/images.svg" alt="imagens sobre a Barbearia">
             </div>
-            <div class="about-description">
+            <div class="about-description" data-aos="zoom-in-left" data-aos-delay="250">
                 <h2>Sobre</h2>
                 <p>Nossa barbearia está com uma novidade, agora você pode agendar os seus horários direto aqui no nosso site, estamos te esperando com profissionais qualificados e com toda a estrututa para melhor atende-los.</p>
                 <p>Horário Sabádos e Feriados: <strong>08:00</strong> ás <strong>12:00</strong> </p>
@@ -53,5 +55,60 @@
         </div>
         
     </section>
+    <section class="services">
+        <div class="services-content container">
+            <h2>Serviços</h2>
+            <p>Aqui você encontra todos os tipos de cortes para melhorar ainda mais o visual do seu cabelo e barba!</p>
+        </div>
+        <section class="haircuts">
+            <div class="haircut" data-aos="flip-left" data-aos-delay="400" data-aos-duration="1500">
+                <img src="imagens/corte1.png" alt="corte normal">
+                <div class="haircut-inform">
+                    <strong>Corte de cabelo</strong>
+                    <button>R$45,00</button>
+                </div>
+            </div>
+            <div class="haircut" data-aos="flip-left" data-aos-delay="400" data-aos-duration="1500">
+                <img src="imagens/corte2.png" alt="barba completa">
+                <div class="haircut-inform">
+                    <strong>Barba completa</strong>
+                    <button>R$25,00</button>
+                </div>
+            </div>
+            <div class="haircut" data-aos="flip-left" data-aos-delay="600" data-aos-duration="1500"> 
+                <img src="imagens/corte3.png" alt="corte normal">
+                <div class="haircut-inform">
+                    <strong>Corte com Máquina</strong>
+                    <button>R$35,00</button>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <div class="services">
+        <h2>Venha nos conhecer!</h2>
+    </div>
+    
+    <iframe width="100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3392.339850713228!2d-52.32088872449497!3d-31.76121547410464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce598fb1e69df1%3A0x4ebed893dcaffdb8!2sShopping%20Pelotas!5e0!3m2!1spt-BR!2sbr!4v1692796338795!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <footer class="footer">
+        <div class="footer-icons">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+        <div>
+            <img src="imagens/logo.svg" alt="logo barbearia">
+        </div>
+        <p>Copyright 2023 | Barba&Hair - Todos direitos reservados. </p>
+    </footer>
+    <a href="https://api.whatsapp.com/send" class="btn-whats" target="_blank"  data-aos="zoom-in-up" data-aos-delay="400" >
+        <img src="imagens/whatssapp.svg" alt="botão whatssapp">
+        <span class="tooltrip-text">Agende seu horário</span>
+    </a>
+
+    <script src="script.js"></script>
+   
+
+    
 </body>
 </html>
